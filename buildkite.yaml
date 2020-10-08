@@ -1,7 +1,4 @@
 ---
-env:
-  STACKUP_VERSION: 1.5.0@sha256:fa1bc4eac1ec9c80a5aca4b3bc420b063c110392413bd89886fd0d8f0c1e94f2
-
 steps:
 
   - label: 'DEV - Deploy Infrastructure'
