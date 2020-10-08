@@ -5,17 +5,17 @@ env:
 steps:
 
   - label: 'DEV - Deploy Infrastructure'
-  command: 
-    - ./ops/scripts/deploy.sh
-  env:
-    ENV: dev
-    STACK: infra
+    command: 
+      - ./ops/scripts/deploy.sh
+    env:
+      ENV: dev
+      STACK: infra
 
   - block: 'Deploy Prod'
 
   - label: 'PROD - Deploy Infrastructure'
-  command: 
-    - ./ops/scripts/deploy.sh
-  env:
-    ENV: prod
-    STACK: infra
+    command: 
+      - ./ops/scripts/deploy.sh
+    env:
+      ENV: prod
+      STACK: infra
