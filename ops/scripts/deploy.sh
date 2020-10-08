@@ -7,5 +7,5 @@ stackup () {
 
 stackup ${ENV}-ecs-demo-${STACK} up \
     --preserve-template-formatting \
-    -t ./deploy/cfn/${STACK}.yaml \
-    -p ./deploy/cfn/params/${ENV}-${STACK}.yaml
+    -t ./ops/cfn/${STACK}.yaml \
+    -p ./ops/cfn/params/${ENV}-${STACK}.yaml
