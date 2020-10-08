@@ -4,16 +4,16 @@ env:
 
 steps:
 
-  - label: 'DEV - Deploy Infrastructure'
+  - label: 'DEV - Terminate Infrastructure'
     command: 
       - ./ops/scripts/terminate.sh
     env:
       ENV: dev
       STACK: infra
 
-  - label: 'PROD - Deploy Infrastructure'
+  - label: 'PROD - Terminate Infrastructure'
     command: 
-      - ./ops/scripts/tterminate.sh
+      - ./ops/scripts/terminate.sh
     env:
       ENV: prod
       STACK: infra
